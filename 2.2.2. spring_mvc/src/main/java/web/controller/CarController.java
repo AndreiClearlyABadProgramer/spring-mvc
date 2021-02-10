@@ -37,8 +37,7 @@ public class CarController {
         cars.add(new CarController("car3", 3, "name3"));
         cars.add(new CarController("car4", 4, "name4"));
         cars.add(new CarController("car5", 5, "name5"));
-        Integer countable = count;
-        List<CarController> calledCars = service.getNumberOfCars(countable, cars);
+        List<CarController> calledCars = service.getNumberOfCars(count, cars);
         model.addAttribute("cars", calledCars);
         return "cars";
     }
