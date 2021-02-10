@@ -27,30 +27,6 @@ public class CarController {
         this.ownerName = ownerName;
     }
 
-    public String getModel() {
-        return model;
-    }
-
-    public int getSeries() {
-        return series;
-    }
-
-    public String getOwnerName() {
-        return ownerName;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
-    }
-
-    public void setSeries(int series) {
-        this.series = series;
-    }
-
-    public void setOwnerName(String ownerName) {
-        this.ownerName = ownerName;
-    }
-
     @GetMapping(value = "/cars")
     public String getCars(@RequestParam(value = "count", required = false) Integer count,
                           ModelMap model){
