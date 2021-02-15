@@ -1,9 +1,10 @@
 package service;
 
 import web.controller.CarController;
+import web.model.Car;
 
 import java.util.List;
 
 public interface Service {
-    List<CarController> getNumberOfCars(Integer count, List<CarController> cars);
+    List<Car> getNumberOfCars(Integer count, List<Car> cars);
 }
